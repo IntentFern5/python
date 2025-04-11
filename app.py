@@ -20,10 +20,10 @@ with tab1:
     ax[0].bar(tab_freq.index, tab_freq.values)  # grafico de barras y siempre necesitare la tabla de frecuencias, que es el renglon anterior
 
     # edad
-    ax[1].hist(ran['edad'], bins = 40) # histograma 
+    ax[1].hist(ran['edad'], bins = 40, color = 'red') # histograma 
 
     # wage
-    ax[2].hist(ran['wage'], bins = 40)
+    ax[2].hist(ran['wage'], bins = 40, color = 'skyblue')
 
     st.pyplot(fig)
 
@@ -31,10 +31,10 @@ with tab1:
     fig, ax = plt.subplots(1, 2, figsize = (10, 4)) # 1, 2 es 1 fila 2 columnas
 
     # educ vs. wage
-    ax[0].scatter(ran['educ'], ran['wage']) # grafico de dispersión
+    ax[0].scatter(ran['educ'], ran['wage'], color = 'orange') # grafico de dispersión
 
     # edad vs. wage
-    ax[1].scatter(ran['edad'], ran['wage'])
+    ax[1].scatter(ran['edad'], ran['wage'], color = 'black')
 
     st.pyplot(fig)
 
