@@ -17,7 +17,7 @@ with tab1:
 
     # educ
     tab_freq = ran['educ'].value_counts().sort_index()
-    ax[0].bar(tab_freq.index, tab_freq.values)  # grafico de barras y siempre necesitare la tabla de frecuencias, que es el renglon anterior
+    ax[0].bar(tab_freq.index, tab_freq.values, color = 'yellow')  # grafico de barras y siempre necesitare la tabla de frecuencias, que es el renglon anterior
 
     # edad
     ax[1].hist(ran['edad'], bins = 40, color = 'red') # histograma 
