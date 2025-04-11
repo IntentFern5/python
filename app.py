@@ -40,6 +40,6 @@ with tab1:
 
 
 with tab2:
-   fig = px.treemap(data_frame=apgn, path=[px.Constant("PGN"), 'Nombre Sector', 'Tipo de gasto'], values='Valor')
+   fig = px.treemap(data_frame=apgn, path=[px.Constant("PGN"), 'Nombre Sector', 'Tipo de gasto'], values='Valor', color_continuous_scale = 'oranges')
 
    st.plotly_chart(fig)
